@@ -1,0 +1,754 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.section-title h3 {
+    font-weight: 900;
+    font-size: 40px;
+    color: #343434;
+    margin-bottom: 80px;
+}
+
+.section-title {
+    position: relative;
+    z-index: 0;
+    width: fit-content;
+    margin: auto;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.section-title::after {
+    content: '';
+    background-image: url('../images/dots.png');
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    z-index: -1;
+}
+
+/* .container {
+    padding-inline: 60px;
+} */
+
+/* ---------------- Navbar ---------------- */
+
+
+.navbar a {
+    color: #fff !important;
+
+}
+
+.navbar .navbar-nav a.active::after {
+    width: 100%;
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+    transition: all .5s;
+}
+
+.navbar .navbar-nav a {
+    padding: 0 !important;
+    margin: 8px 8px 0 8px;
+    color: #fff;
+    position: relative;
+}
+
+/* ---------------- Header ---------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .header-caption h1 span::after {
+        content: '';
+        animation-name: header-animation;
+        animation-iteration-count: infinite;
+        animation-duration: 15s;
+    }
+}
+
+header h5 {
+    font-size: 50px;
+    font-weight: 800;
+
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+header .header-caption a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header a .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+@keyframes header-animation {
+    0% {
+        content: '|';
+    }
+
+    1.5% {
+        content: 'L| ';
+    }
+
+    3% {
+        content: 'La| ';
+    }
+
+    4.5% {
+        content: 'Lar| ';
+    }
+
+    6% {
+        content: 'Larr| ';
+    }
+
+    7.5% {
+        content: 'Larry| ';
+    }
+
+    9% {
+        content: 'Larry | ';
+    }
+
+    10.5% {
+        content: 'Larry D| ';
+    }
+
+    12% {
+        content: 'Larry Da| ';
+    }
+
+    13.5% {
+        content: 'Larry Dan| ';
+    }
+
+    15% {
+        content: 'Larry Dani| ';
+    }
+
+    16.5% {
+        content: 'Larry Danie| ';
+    }
+
+    18% {
+        content: 'Larry Daniel| ';
+    }
+
+    19.5% {
+        content: 'Larry Daniels| ';
+    }
+
+    21% {
+        content: 'Larry Daniel| ';
+    }
+
+    22.5% {
+        content: 'Larry Danie| ';
+    }
+
+    24% {
+        content: 'Larry Dani| ';
+    }
+
+    25.5% {
+        content: 'Larry Dan| ';
+    }
+
+    27% {
+        content: 'Larry Da|';
+    }
+
+    28.5% {
+        content: 'Larry D|';
+    }
+
+    30% {
+        content: 'Larry |';
+    }
+
+    31.5% {
+        content: 'Larry|';
+    }
+
+    33% {
+        content: 'Larr|';
+    }
+
+    34.5% {
+        content: 'Lar|';
+    }
+
+    36% {
+        content: 'La|';
+    }
+
+    37.5% {
+        content: 'L|';
+    }
+
+    39% {
+        content: '|';
+    }
+
+    41.5% {
+        content: 'D|';
+    }
+
+    43% {
+        content: 'De|';
+    }
+
+    44.5% {
+        content: 'Dev|';
+    }
+
+    46% {
+        content: 'Deve|';
+    }
+
+    47.5% {
+        content: 'Devel|';
+    }
+
+    49% {
+        content: 'Develo|';
+    }
+
+    51.5% {
+        content: 'Develop|';
+    }
+
+    53% {
+        content: 'Develope|';
+    }
+
+    54.5% {
+        content: 'Developer|';
+    }
+
+    56% {
+        content: 'Develope|';
+    }
+
+    57.5% {
+        content: 'Develop|';
+    }
+
+    59% {
+        content: 'Develo|';
+    }
+
+    60.5% {
+        content: 'Devel|';
+    }
+
+    61.5% {
+        content: 'Deve|';
+    }
+
+    63% {
+        content: 'Dev|';
+    }
+
+    64.5% {
+        content: 'De|';
+    }
+
+    66% {
+        content: 'D|';
+    }
+
+    67.5% {
+        content: '|';
+    }
+
+    69% {
+        content: 'D|';
+    }
+
+    70.5% {
+        content: 'De|';
+    }
+
+    72% {
+        content: 'Des|';
+    }
+
+    73.5% {
+        content: 'Desi|';
+    }
+
+
+    75% {
+        content: 'Desig|';
+    }
+
+    76.5% {
+        content: 'Design|';
+    }
+
+    78% {
+        content: 'Designe|';
+    }
+
+    79.5% {
+        content: 'Designer|';
+    }
+
+    81% {
+        content: 'Designe|';
+    }
+
+    82.5% {
+        content: 'Design|';
+    }
+
+    84% {
+        content: 'Desig|';
+    }
+
+    85.5% {
+        content: 'Desi|';
+    }
+
+    87% {
+        content: 'Des|';
+    }
+
+    88.5% {
+        content: 'De|';
+    }
+
+    90% {
+        content: 'D|';
+    }
+
+    91.5% {
+        content: '|';
+    }
+
+    93% {
+        content: '|';
+    }
+
+    94.5% {
+        content: '|';
+    }
+
+    96% {
+        content: '|';
+    }
+
+    97.5% {
+        content: '|';
+    }
+
+    99% {
+        content: '|';
+    }
+
+    100% {
+        content: '|';
+    }
+
+}
+
+/* ---------------- About-us ---------------- */
+
+.about-us,
+.services,
+.portfolio,
+.testimonials,
+.our-team,
+.contact-us,
+.stats {
+    padding: 100px 0 70px;
+}
+
+.about-us .inner-left {
+    padding: 0 0 0 30px;
+    margin-bottom: 30px !important;
+    position: relative;
+}
+
+.about-us .inner-right .span-with-spacing {
+    letter-spacing: 2px;
+    color: #999;
+}
+
+.about-us .inner-left::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url('../images/dots.png');
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.about-us .progress {
+    height: 25px;
+}
+
+.about-us button {
+    padding: 10px 30px;
+    font-size: 13px;
+}
+
+.about-us button a {
+    color: #212529;
+}
+
+.about-us button:hover a {
+    color: #fff;
+}
+
+.about-us .btn-dark:hover {
+    background: transparent !important;
+    color: #343434 !important;
+}
+
+/* ---------------- Services ---------------- */
+
+.services .inner span {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    color: #1C1C1C;
+    transition: color .5s, background-color .5s;
+}
+
+.services .inner:hover span {
+    background-color: #1C1C1C;
+    color: #fff;
+}
+
+.services p {
+    word-spacing: 2px;
+}
+
+/* ----------------Portfolio ---------------- */
+
+.portfolio .portfolio-images .inner {
+    position: relative;
+}
+
+.portfolio .portfolio-images .overlay {
+    position: absolute;
+    inset: 2%;
+    top: 8%;
+    bottom: -6%;
+    background-color: #fff;
+    transition: all 0.5s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio .portfolio-images .inner:hover .overlay {
+    inset: 2%;
+    opacity: .95;
+}
+
+.portfolio .portfolio-images .overlay h6 {
+    /* position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); */
+    transform: translateY(-200%);
+    transition: all 0.5s;
+}
+
+.portfolio .portfolio-images .overlay .icons {
+    /* position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);*/
+    display: flex;
+    column-gap: 5px;
+    transition: all 0.5s;
+
+}
+
+.portfolio .portfolio-images .overlay .icons span:hover {
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+}
+
+.portfolio .portfolio-images .overlay .icons span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 1px solid black;
+    color: #fff;
+}
+
+.portfolio .portfolio-images .inner:hover .overlay h6,
+.portfolio .portfolio-images .inner:hover .overlay .icons {
+    transform: translateY(0);
+}
+
+.portfolio .nav a {
+    cursor: pointer;
+    font-weight: 700 !important;
+    position: relative;
+    padding: 0;
+
+}
+
+.portfolio .nav a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.5s;
+    /* border-bottom: 0; */
+}
+
+.portfolio .nav a.active::after {
+    width: 100%;
+}
+
+/* ----------------Testimonials ---------------- */
+
+.testimonials img {
+    width: 90px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.testimonials .carousel-caption span {
+    font-size: 12px;
+}
+
+.testimonials .carousel-indicators button {
+    background-color: #d6d6d6;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-inline: 7px;
+}
+
+.testimonials .carousel-indicators button.active {
+    background-color: #869791;
+}
+
+.testimonials .carousel-indicators button:hover {
+    background-color: #869791;
+}
+
+
+.testimonials p {
+    word-spacing: 2px;
+}
+
+/* ----------------Stats ---------------- */
+
+.stats h3 {
+    font-weight: 900;
+    color: #343434;
+}
+
+.stats p {
+    font-weight: 600;
+}
+
+.stats i {
+    color: #343434;
+}
+
+
+/* ----------------Our-Team ---------------- */
+
+.our-team {
+    padding-bottom: 100px;
+}
+
+.our-team .img-and-overlay {
+    li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #000;
+        border: 1px solid black;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            background-color: transparent;
+            color: #000;
+            cursor: pointer;
+        }
+
+    }
+
+    .overlay {
+        inset: 2%;
+        background-color: #fff;
+        transition: all .5s;
+        transform: rotateY(180deg) scale(0.5);
+        opacity: 0;
+
+    }
+
+
+}
+
+.our-team .inner:hover .overlay {
+    transform: rotateY(0deg) scale(1);
+    opacity: .95;
+}
+
+.our-team .img-and-overlay img {
+    transition: all .5s;
+}
+
+.our-team .img-and-overlay:hover img {
+    transform: scale(1.2);
+}
+
+/* ----------------Contact-us ---------------- */
+
+.contact-us {
+
+    padding-bottom: 100px;
+
+    /* .container {
+        padding-inline: 60px;
+    } */
+
+    .contact-info .inner {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .contact-info .inner:hover span {
+        background-color: #343434;
+    }
+
+    .contact-info .inner:hover i {
+        color: #fff;
+    }
+
+    .contact-info .inner span {
+        font-size: 25px;
+        margin-bottom: 15px;
+        width: 60px;
+        height: 60px;
+        margin: auto;
+        /* line-height: 60px; */
+        background: #f4f4f4;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+
+        i {
+            color: #343434;
+        }
+
+    }
+
+    .cu-form-controls .form-control:not(textarea) {
+        height: 40px;
+    }
+
+    .cu-form-controls .form-control {
+        background-color: #F4F4F4;
+        border: unset;
+        padding: 10px;
+    }
+
+    .cu-form-controls .form-control::placeholder {
+        color: #757575;
+        font-size: 14px;
+    }
+
+    .cu-form-controls .form-control:focus {
+        border: unset;
+        box-shadow: unset;
+    }
+
+    .cu-form-controls textarea {
+        resize: both;
+        height: 160px;
+        max-width: 100%;
+        max-height: 160px;
+    }
+
+    button {
+        padding: 10px 40px;
+        font-size: 13px;
+    }
+
+    button:hover {
+        background: transparent !important;
+        color: #343434 !important;
+    }
+}
+
+
+/* ----------------Footer ---------------- */
+
+footer {
+    background-color: #1C1C1C;
+}
+
+footer p {
+    color: #748182;
+    font-size: 13px;
+    word-spacing: 2px;
+}
